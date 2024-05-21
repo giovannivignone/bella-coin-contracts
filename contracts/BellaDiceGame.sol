@@ -6,7 +6,7 @@ import { BellaToken, INonfungiblePositionManager, IUniswapV3Pool, TickMath, Full
 import { IUniswapV3Factory } from "./interfaces/uniswap/IUniswapV3Factory.sol";
 import { Babylonian } from "./vendor0.8/uniswap/Babylonian.sol";
 
-contract BellaDiceGame is RrpRequesterV0, Ownable {
+contract BellaDiceGame is RrpRequesterV0, Ownable(msg.sender) {
     using TransferHelper for address;
 
     struct GameRound {

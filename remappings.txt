@@ -1,0 +1,1 @@
+@api3/airnode-protocol/=lib/airnode/packages/airnode-protocol/
